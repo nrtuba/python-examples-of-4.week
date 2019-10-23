@@ -1,0 +1,16 @@
+#3.soru
+#girilen metindeki rakam sayisini  ve  harf sayisini bulma
+
+metin=input("islem yapmak istediginiz metni giriniz:")
+s=h=0           #s degiskeni sayilari ve h degiskenini de harfleri temsil olarak yazdk
+
+for i in metin:        #girilen metinin icindeki sayilari hesaplamasi icin isdigit kosulunu girdik
+    if i.isdigit():
+        s=s+1            #metinde sayi oldugu durumda 1 arttiracak
+    elif i.isalpha():
+        h=h+1            #mtinde harf gordugu durumda 1 artacak
+    else:
+        pass
+
+print("harflerin toplami:",h)
+print("sayilarin toplami:",s)
