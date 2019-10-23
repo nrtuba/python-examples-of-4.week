@@ -1,0 +1,12 @@
+#futbolcular dosyasindaki sesli harfle baslayan isimleri yazdirma
+#dosyayi aciyoruz r+ moduyla okutuyoruz
+
+sesli_harfler="aeioAEIOUİ"
+with open("futbolcular(1).txt","r+",encoding="utf-8") as f:
+
+    for i in f:  #veri deki bilgileri tek tek gostermek icin for dongusuyle yazdk
+       
+       if i[0] in sesli_harfler:
+           
+           with open("sesli_harf_futbolcular.txt","a+",encoding="utf-8") as file: #kelime sesli harfle basliyorsa yeni bir acip kaydediyor. 
+                file.write(i)
