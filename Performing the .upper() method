@@ -1,0 +1,3 @@
+#kullaniciinin girdiigi metini buyuk harfe donusturme
+x=input("buyuk harfe donusturmek istediginiz metni giriniz:")
+print(x.upper())
